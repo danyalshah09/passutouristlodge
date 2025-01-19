@@ -1,0 +1,47 @@
+*{
+    border: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent-icon-facilites{
+    text-align: center;
+    bottom: 0;
+}
+
+.facilties-breakfast{
+    display: grid;
+grid-template-columns: 2fr 2fr 2fr;
+padding:50px 50px;
+margin: 24px;
+text-align: center;
+
+/* place-items: center; */
+}
+.facilties-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 1.25rem;
+    /* row-gap: 2rem; */
+    margin: 15px 15px;
+    margin-bottom: 22px;
+    transition: box-shadow 0.3s ease; /* Adding transition effect */
+
+}
+
+.facilties-breakfast img{
+    object-fit: contain;
+    width: 100px;
+    
+    height: 200px;
+    /* object-fit: cover; */
+    
+}
+
+
+.facilities-icon:hover {
+    box-shadow: 0 0 10px rgba(36, 36, 36, 0.5); /* Adding box shadow on hover */
+}

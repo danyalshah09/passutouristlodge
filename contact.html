@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTL Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="./styles.css" />
+ 
+
+     
+</head>
+
+<body>
+    <nav>
+        <label class="logo">
+            <img src="./logo/PTL_LOGO.jpg" alt="logo" />
+        </label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="index.html#room_types">Rooms</a></li>
+            <li><a href="index.html#Amenities">Amenities</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="#">Dine</a></li>
+            <li><a href="./contact.html" class="contact-link">Contact Us</a></li>
+        </ul>
+        <label id="icon"><i class="fa-solid fa-bars" style="color: #8a8a8a"></i></label>
+    </nav>
+      
+    <div class="main_container">
+        <div class="left">
+            <h1 class="prim_head">We would love to hear from <span class="heading_slogan">You</span></h1>
+            <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-group btn_second">
+                    <button  type="submit" class="btn_book" value="Send Message">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <h1 class="contact_heading">Contact Details</h1>
+            <div class="contact_box">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact_second_box">
+                    <h4>Call Us</h4>
+                    <span class="contact_info">+923554477788</span>
+                </div>
+            </div>
+            <div class="contact_box">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact_second_box">
+                    <h4>Email Us</h4>
+                    <span  class="contact_info">ptlpassu@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact_box">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact_second_box">
+                    <h4>Address</h4>
+                    <span  class="contact_info">Passu Gojal Hunza Gilgit-Baltistan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- -------------------------------FOOTER STARTS here--------------------------------------- -->
+    <footer>
+        <div class="footer_container">
+          <div class="footer_boxes">
+            <div class="footer_address">
+                <h3>Address</h3>
+                <address><i>Passu Gojal Hunza Gilgit-Baltistan</address>
+                <address>located near Passu Cones Viewpoint</i></address>
+                <div class="footer_email">
+                  <button type="submit" class="custom-btn-email">Email Us </button>
+              </div>    
+            </div>
+            <div class="footer_contact">
+              <div class="footer_address">
+                <h3>Follow Us</h3>
+                <ul class="custom-footer-links">
+                  <li><a href="http://scanfcode.com/category/c-language/"><i class="fas fa-phone"></i>
+                  </i> +92-3554477788</a></li>
+                  <li><a href="http://scanfcode.com/category/front-end-development/">Location</a></li>
+              </ul>
+    
+              <div class="custom-social-icons">
+                <a href="https://www.facebook.com/ptlpassu" class="social-icon facebook"><i class="fa-brands fa-facebook fa-xs"></i></a>
+                <a href="https://www.instagram.com" class="social-icon instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://www.facebook.com" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                <a href="https://www.facebook.com" class="social-icon youtube"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            </div>
+            
+            </div>
+            </div>
+            <div class="footer_links">
+                <h3>Quick Links</h3>
+                <ul class="custom-footer-links">
+                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                </ul>
+            </div>
+    
+          </div>
+          <div class="footer_copyright">
+            <p class="custom-copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+              <a href="#" class="custom-orange-btn">QubaSoft</a>.
+          </p>
+          </div>
+        </div>
+      </footer>
+      <script>
+            const icon = document.getElementById('icon');
+    const menu = document.querySelector('nav ul');
+
+    icon.addEventListener("click", function () {
+        menu.classList.toggle('show');
+        icon.classList.toggle('toggle');
+
+        if (icon.classList.contains('toggle')) {
+            icon.innerHTML = '<i class="fa-solid fa-times" style="color: #8a8a8a"></i>';
+        } else {
+            icon.innerHTML = '<i class="fa-solid fa-bars" style="color: #8a8a8a"></i>';
+        }
+    });
+
+    document.querySelectorAll('nav ul li a').forEach(function (element) {
+        element.addEventListener("click", function () {
+            document.querySelectorAll('nav ul li a').forEach(function (el) {
+                el.classList.remove('active');
+            });
+            this.classList.add('active');
+            menu.classList.remove('show');
+            icon.classList.remove('toggle');
+            icon.innerHTML = '<i class="fa-solid fa-bars" style="color: #8a8a8a"></i>';
+        });
+    });
+
+
+      </script>
+      </body>
+</html>
